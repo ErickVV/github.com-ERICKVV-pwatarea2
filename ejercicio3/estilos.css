@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.contenedor-imagen img {
+  width: 300px; 
+  height: auto;
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 1;
+}
+
+.contenedor-imagen img:hover {
+  opacity: 0.5; /* Cambio de opacidad al pasar el ratón */
+}

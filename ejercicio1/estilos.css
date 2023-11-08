@@ -1,0 +1,45 @@
+/* Contenedor general de la página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del div que cambiará de color */
+.estilo-visual {
+  width: 300px; /* Ancho fijo */
+  height: 200px; /* Alto fijo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  transition: background-color 0.5s ease; /* Suavizado de la transición de color */
+}
+
+/* Estilos para el nuevo color de fondo */
+.color-nuevo {
+  background-color: #4c7aaf; /* Nuevo color de fondo */
+  color: white; /* Cambiamos el color del texto para que contraste */
+}
+
+/* Estilos para el botón */
+#botonCambio {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #baae00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 50px; /* Aumentamos el espacio encima del botón */
+}
+
+#botonCambio:hover {
+  background-color: #2b2d2e;
+}

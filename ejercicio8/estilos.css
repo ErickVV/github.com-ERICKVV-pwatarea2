@@ -1,0 +1,38 @@
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  display: block;
+}
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+button:focus {
+  outline: 0;
+}

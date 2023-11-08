@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;  /* Centra el contenido */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    color: #007BFF;
+}
+
+nav a:active {
+    color: #4CAF50;
+}
+
+.galeria {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;  /* Espaciado entre imágenes */
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Espaciado entre imágenes de una misma fila */
+    width: 100%;
+}
+
+.galeria img {
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+/* Estilos para que el footer abarque la parte final */
+html, body {
+    height: 100%;  /* Aseguramos que el html y body tomen toda la altura */
+}
+
+body {
+    display: flex;  
+    flex-direction: column;  /* Dirección de los elementos en columnas */
+}
+
+.galeria {
+    flex: 1;  /* Esto hace que la galería tome todo el espacio disponible, empujando el footer hacia abajo */
+}
+
+footer {
+    width: 100%;  /* Aseguramos que el footer tenga todo el ancho */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky; /* Hacemos que el footer sea "pegajoso" */
+    bottom: 0;  /* Pegamos el footer al fondo */
+}
